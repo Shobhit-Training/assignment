@@ -1,0 +1,16 @@
+{
+  "LevelInfo": [
+    {
+      "Name": "Customer Cloud Maturity",
+      "LevelValueKey": 2
+    },
+    {
+      "Name": "Delivery Maturity and Quality",
+      "LevelValueKey": 3
+    },
+    {
+      "Name": "Scope and Change Management",
+      "LevelValueKey": 4
+    }
+  ]
+}

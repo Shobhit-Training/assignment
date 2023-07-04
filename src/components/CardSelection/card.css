@@ -1,0 +1,107 @@
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.main-wrapper{
+    padding: 40px;    
+    background-color: #f7f7f5;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+.ms-Viewport {
+  margin: 0 1.5%;
+}
+
+.ms-Grid-col {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.ms-FocusZone {
+  padding: 0;
+}
+.flex-grow-1 {
+    flex-grow: 1
+}
+.flex-container .flex-item {
+    background-color: #fff;  
+         
+}
+
+@media (max-width: 800px) {
+    .flex-container .flex-item {
+     
+    max-width:100%;  
+    min-width:100%;
+    
+}
+
+.flex-container .card-body .label{
+    font-size: 12px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-container .card-body .value{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.flex-container .card-body .value-label{
+    font-size: 12px !important;
+}
+.flex-container .card-body .overall .value{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.flex-container .card-body .overall .value-label{   
+    font-weight: 600 !important;
+}
+}
+
+.flex-container .custom-flex-item {
+    flex-basis: 48px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;    
+    background-color: #f7f7f5;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+.flex-container .card-body{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+.flex-container .card-body .flex-container{
+    flex-direction: column;
+}
+.flex-container .card-body .label{
+    font-size: 15px;
+    font-weight: bold;
+   /* min-width: 200px;*/
+}
+.flex-container .card-body .value{
+    font-size: 20px;
+    font-weight: bold;
+}
+.flex-container .card-body .value-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.flex-container .card-body .overall .value{
+    font-size: 29px;
+    font-weight: bold;
+}
+.flex-container .card-body .overall .value-label{   
+    font-weight: bold;
+}

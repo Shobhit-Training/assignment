@@ -1,0 +1,49 @@
+#root {
+   background-color: rgba(225, 223, 221, 0.2);
+}
+
+.ms-Grid-row {
+  margin :8px 34px;
+  background:white;
+}
+
+.ms-Grid-row .ms-sm9 {
+  width:100%
+}
+
+@media (min-width: 1024px) {
+.ms-xl9 {
+    width: 100%;
+}
+}
+
+.ms-Grid-col {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+

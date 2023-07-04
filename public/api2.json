@@ -1,0 +1,24 @@
+{
+  "LevelValueMaster": [
+    {
+      "LevelValueKey": 1,
+      "value": "30%"
+    },
+    {
+      "LevelValueKey": 2,
+      "value": "40%"
+    },
+    {
+      "LevelValueKey": 3,
+      "value": "50%"
+    },
+    {
+      "LevelValueKey": 4,
+      "value": "60%"
+    },
+    {
+      "LevelValueKey": 5,
+      "value": "70%"
+    }
+  ]
+}
