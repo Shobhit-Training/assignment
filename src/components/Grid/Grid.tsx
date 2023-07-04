@@ -1,6 +1,6 @@
 import React from "react";
 import { DetailsList } from "@fluentui/react";
-import "office-ui-fabric-react/dist/css/fabric.css";
+
 import { SelectBox } from "../SelectBox/SelectBox";
 
 const operations: any = [

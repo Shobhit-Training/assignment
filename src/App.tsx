@@ -1,4 +1,3 @@
-import "office-ui-fabric-react/dist/css/fabric.css";
 import "./App.css";
 
 import CardsSection from "./components/CardSelection/CardSection";
