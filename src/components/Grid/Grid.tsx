@@ -66,7 +66,11 @@ function renderItemColumn(item?: any, index?: number, column?: any) {
       return <SelectBox></SelectBox>;
 
     default:
-      return <span>{fieldContent}</span>;
+      return (
+        <span aria-labelledby={fieldContent} tabIndex={index}>
+          {fieldContent}
+        </span>
+      );
   }
 }
 const GridData: React.FC = () => {

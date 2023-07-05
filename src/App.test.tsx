@@ -5,7 +5,7 @@ import { App } from "./App";
 test("renders App compoenent with child component", () => {
   render(<App />);
 
-  const root = screen.getByRole("parent-div");
+  const root = screen.getByTitle("parent-div");
 
   const parent = screen.getByTestId("parent");
   const child = screen.getByTestId("card");

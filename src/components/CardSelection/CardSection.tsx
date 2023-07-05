@@ -34,7 +34,7 @@ const CardsSection: React.FC = () => {
       return el.LevelValueKey === key;
     });
 
-    return filterData![0].value || " ";
+    return filterData!.length > 0 ? filterData![0].value || " " : "0%";
   };
 
   const getAverage = () => {
@@ -61,7 +61,9 @@ const CardsSection: React.FC = () => {
             <React.Fragment key={Math.random()}>
               <div
                 data-testid="cardsection"
-                className="flex-grow-1 flex-item"
+                className={`flex-grow-1 flex-item${
+                  index > 1 ? " overall-fex-width-child-card" : ""
+                }`}
                 tabIndex={index + 1}
               >
                 <div className="card-body">
@@ -84,17 +86,33 @@ const CardsSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-              {index <= 1 && (
-                <div className="flex-item custom-flex-item">+</div>
+              {index <= data?.apiData?.LevelInfo!.length! - 2 && (
+                <div
+                  className={`flex-item custom-flex-item ${
+                    index >= 1 ? "overall-fex-width-child" : ""
+                  }`}
+                >
+                  +
+                </div>
               )}
             </React.Fragment>
           ))}
 
-        <div className="flex-item custom-flex-item">=</div>
+        <div
+          className={`flex-item custom-flex-item ${
+            data?.apiData?.LevelInfo!.length! > 3 ? "overall-fex-width" : ""
+          }`}
+        >
+          =
+        </div>
         <div
           data-testid="overallCard"
           tabIndex={4}
-          className="flex-grow-1 flex-item"
+          className={`flex-grow-1 flex-item overall-card ${
+            data?.apiData?.LevelInfo!.length! > 3
+              ? "overall-fex-width-card"
+              : ""
+          }`}
         >
           <div className="card-body">
             <div aria-labelledby={"Overall"} className="flex-grow-1 label">
